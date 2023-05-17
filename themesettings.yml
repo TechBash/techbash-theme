@@ -1,6 +1,11 @@
 ## Standard Settings
+Company:
+  - Name: TechBash Foundation
 Layout: /_layout.cshtml
-Social:
-  - Twitter: techbash
 
 ## Computed Settings
+Copyright: | 
+  => { 
+    string company = Context.GetString("Company.Name")
+    return $"Copyright ©{DateTime.Now.Year} {company}" 
+  }
