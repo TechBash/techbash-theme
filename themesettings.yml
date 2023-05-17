@@ -1,11 +1,14 @@
 ## Standard Settings
 Company:
-  - Name: TechBash Foundation
+  Name: TechBash Foundation
 Layout: /_layout.cshtml
 
 ## Computed Settings
 Copyright: | 
   => { 
-    string company = Context.GetString("Company.Name");
+    foreach (string i in Context.Keys) {
+      Console.WriteLine(i);
+    }
+    string company = Context.GetString("Company:Name");
     return $"Copyright ©{DateTime.Now.Year} {company}";
   }
