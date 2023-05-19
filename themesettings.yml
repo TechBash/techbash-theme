@@ -1,6 +1,11 @@
 ## Standard Settings
 Company:
   Name: TechBash Foundation
+  Address1: PO Box 641
+  Address2: 
+  City: Avondale
+  State: PA
+  ZipCode: 19311
 Layout: /_layout.cshtml
 
 ## Computed Settings
